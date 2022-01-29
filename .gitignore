@@ -1,0 +1,7 @@
+[Visual Studio Projects]
+src/*/.vs/*
+
+[.NET Projects]
+src/*/bin/*
+src/*/obj/*
+
