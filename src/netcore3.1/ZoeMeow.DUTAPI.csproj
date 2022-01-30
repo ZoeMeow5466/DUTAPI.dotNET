@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/ZoeMeow6250/DUTAPI</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/ZoeMeow6250/DUTAPI</PackageProjectUrl>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Description>This library provides something fun (crawl data) for access for some features in DUT Student page - Da Nang University of Technology.</Description>
   </PropertyGroup>
 
   <ItemGroup>
