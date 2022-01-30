@@ -2,18 +2,17 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using ZoeMeow.DUTAPI.Objects;
 
 namespace ZoeMeow.DUTAPI
 {
     public partial class Session
     {
-        public List<SubjectInfo> GetScheduleSubjects(int year = 20, int semester = 1, bool studyAtSummer = false)
+        public List<SubjectInfo> GetSubjectsSchedule(int year = 20, int semester = 1, bool studyAtSummer = false)
         {
             List<SubjectInfo> list = null;
 
-            // try
+            try
             {
                 list = new List<SubjectInfo>();
 
@@ -21,7 +20,7 @@ namespace ZoeMeow.DUTAPI
                 if (successfulStatusCode.Contains(httpReturn.StatusCode))
                 {
                     HtmlDocument httpTemp;
-                    
+
                     // Schedule at study
                     httpTemp = new HtmlDocument();
                     httpTemp.LoadHtml(httpReturn.HTMLDocument.GetElementbyId("TTKB_GridInfo").InnerHtml);
@@ -99,15 +98,15 @@ namespace ZoeMeow.DUTAPI
                         }
                 }
             }
-            // catch
-            // {
-            //     list.Clear();
-            //     list = null;
-            // }
-            // finally
-            // {
-            // 
-            // }
+            catch
+            {
+                list.Clear();
+                list = null;
+            }
+            finally
+            {
+            
+            }
 
             return list;
         }

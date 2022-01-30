@@ -20,7 +20,7 @@ namespace ZoeMeow.DUTAPI.Objects
         /// <summary>
         /// Subject credit
         /// </summary>
-        public int Credit { get; set; } = 0;
+        public float Credit { get; set; } = 0;
         #endregion
 
         #region Subject Information

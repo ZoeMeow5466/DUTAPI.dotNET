@@ -10,11 +10,13 @@ namespace ZoeMeow.DUTAPI
     {
         public static List<NewsSubject> GetNewsSubjects(int page = 1)
         {
-            List<NewsSubject> list = new List<NewsSubject>();
             WebClient web = new WebClient();
+            List<NewsSubject> list = null;
 
             try
             {
+                list = new List<NewsSubject>();
+
                 var httpReturn = web.Get($"http://sv.dut.udn.vn/WebAjax/evLopHP_Load.aspx?E=CTRTBGV&PAGETB={ page }&COL=TieuDe&NAME=&TAB=1");
                 var newsCollection = httpReturn.HTMLDocument.DocumentNode.SelectNodes("//div[@class='tbBox']");
 
@@ -60,6 +62,7 @@ namespace ZoeMeow.DUTAPI
             }
             catch
             {
+                list.Clear();
                 list = null;
             }
             finally
