@@ -10,7 +10,12 @@ namespace ZoeMeow.DUTAPI
         public Session()
         {
             webClient = new WebClient();
+
+            successfulStatusCode = new List<int>();
+            successfulStatusCode.AddRange(new int[] { 200, 204 });
         }
+
+        private List<int> successfulStatusCode = null;
 
         public void Dispose()
         {
