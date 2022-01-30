@@ -42,3 +42,13 @@ Branch in DUTAPI?
 - This project - DUTAPI - is not affiliated with Da Nang University of Technology. 
 - DUT, Da Nang University of Technology, web materials and web contents are trademarks and copyrights of Da Nang University of Technology school.
 
+## Latest change log
+
+Version 1.2
+- Added feature: Get all subjects fee list.
+- Change file and function name: ~~GetScheduleSubject~~ to **GetSubjectsSchedule**.
+- Add [CHANGELOG.md](CHANGELOG.md) for all old logs.
+- Optimize code.
+
+[Click here](CHANGELOG.md) for all log versions.
+
