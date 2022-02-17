@@ -5,3 +5,5 @@ src/*/.vs/*
 src/*/bin/*
 src/*/obj/*
 
+[Python Projects]
+src/*/DUTAPI/__pycache__/*
