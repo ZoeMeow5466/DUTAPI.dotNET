@@ -14,7 +14,6 @@ This library provides something fun (crawl data) for access for some features in
 
 - For library using Python:
   - Python 3.8.
-  - Note: DUTAPI project using Python language has beed deleted due to some known issues but can't fixed. This will be added later.
 
 ## Using library:
 
@@ -44,11 +43,10 @@ Branch in DUTAPI?
 
 ## Latest change log
 
-Version 1.2
-- Added feature: Get all subjects fee list.
-- Change file and function name: ~~GetScheduleSubject~~ to **GetSubjectsSchedule**.
-- Add [CHANGELOG.md](CHANGELOG.md) for all old logs.
-- Optimize code.
+Version 1.3
+- Inital commit for Python.
+- Delete unneed files for .NET.
+- Optimize code :)
 
 [Click here](CHANGELOG.md) for all log versions.
 
