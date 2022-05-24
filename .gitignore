@@ -1,7 +1,10 @@
 [Visual Studio Projects]
-src/*/.vs/*
+.vs/*
+*/.vs/*
+
+[Visual Studio Code]
+.vscode/*
 
 [.NET Projects]
-src/*/bin/*
-src/*/obj/*
-
+*/bin/*
+*/obj/*

@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace ZoeMeow.DUTAPI.Objects
+namespace ZoeMeow.DUTAPI
 {
-    public class AccountInfo
+    public class AccountInformation
     {
         /// <summary>
         /// Student name
